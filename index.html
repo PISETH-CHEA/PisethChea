@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piseth Chea - GitHub Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6; /* Light gray background */
+        color: #374151; /* Darker text */
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white p-6 shadow-lg rounded-b-lg">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center"
+      >
+        <h1 class="text-3xl font-bold mb-4 md:mb-0">Piseth Chea</h1>
+        <nav>
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="#about"
+                class="hover:text-blue-400 transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="hover:text-blue-400 transition duration-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#skills"
+                class="hover:text-blue-400 transition duration-300"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-blue-400 transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section
+      id="about"
+      class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md"
+    >
+      <div class="flex flex-col md:flex-row md:items-center items-center gap-8">
+        <!-- On mobile, text above the picture -->
+        <div
+          class="md:w-1/3 flex flex-col items-center justify-center flex-shrink-0"
+        >
+          <!-- Show heading only on mobile -->
+          <h2
+            class="text-4xl font-extrabold mb-4 text-gray-800 md:hidden text-center w-full"
+          >
+            About Me
+          </h2>
+
+          <img
+            src="./Piseth.jpg"
+            alt="Piseth Chea Profile Photo"
+            class="w-48 h-48 rounded-full object-contain shadow-lg border-4 border-blue-500"
+          />
+        </div>
+
+        <!-- Text Content -->
+        <div class="md:w-2/3 text-lg leading-relaxed text-gray-700">
+          <!-- Show heading only on md+ -->
+          <h2
+            class="hidden md:block text-4xl font-extrabold mb-4 text-gray-800"
+          >
+            About Me
+          </h2>
+
+          <p class="mb-4">
+            Hello! I'm
+            <span class="font-semibold text-blue-600">Piseth Chea</span>, an
+            engineering student at the Institute of Technology of Cambodia,
+            majoring in Data Science.
+          </p>
+
+          <p class="mb-4">
+            I'm passionate about
+            <strong>researching new things everyday</strong> and enjoy applying
+            my skills in <strong>storytelling with data</strong> to create
+            impactful insights. My programming expertise includes
+            <strong>Python, SQL, and JavaScript</strong>, primarily focused on
+            data-related applications. I'm also proficient in data visualization
+            tools like <strong>Tableau, Power BI, and Looker</strong>.
+          </p>
+
+          <p>
+            Beyond data, I also have skills in
+            <strong>entrepreneurship and communication</strong>, which help me
+            bridge technical solutions with real-world impact. Feel free to
+            explore my projects below and connect with me!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md"
+    >
+      <h2 class="text-4xl font-extrabold text-center mb-8 text-gray-800">
+        My Projects
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div
+          class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200"
+        >
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">
+            Bank OOP Project
+          </h3>
+          <p class="text-gray-700 mb-4">
+            A Python OOP banking system with multiple account types, supporting
+            deposits, withdrawals, and transfers. It includes exception handling
+            to prevent overdrafts and models basic financial logic.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="bg-indigo-200 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded-full"
+              >Python</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center">
+            <a
+              href="https://github.com/PISETH-CHEA/Bank-OOP-Project"
+              target="_blank"
+              class="text-blue-600 hover:text-blue-800 font-semibold flex items-center"
+            >
+              <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.542-1.355-1.326-1.714-1.326-1.714-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.464-2.381 1.236-3.221-.124-.3-1.31-3.04.094-3.179 0 0 1.009-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23 1.404.14 0.124 2.879.094 3.179.771.84 1.236 1.911 1.236 3.221 0 4.61-2.805 5.624-5.474 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.195.694.8 1.571 4.881-1.59 8.358-6.08 8.358-11.387 0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+              GitHub Repo
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-800 font-semibold flex items-center"
+            >
+              <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+              Live Demo (Optional)
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div
+          class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200"
+        >
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">
+            Breast Cancer Classification
+          </h3>
+          <p class="text-gray-700 mb-4">
+            This project is a breast cancer classification model using
+            <strong>scikit-learn</strong> to train a neural network that
+            predicts if a tumor is <strong>malignant</strong> or
+            <strong>benign</strong> The model also includes a predictive system
+            for new data.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="bg-indigo-200 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded-full"
+              >Python</span
+            >
+          </div>
+          <div class="flex justify-between items-center">
+            <a
+              href="https://github.com/PISETH-CHEA/ML-Breast-Cancer/tree/main"
+              target="_blank"
+              class="text-blue-600 hover:text-blue-800 font-semibold flex items-center"
+            >
+              <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.542-1.355-1.326-1.714-1.326-1.714-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.464-2.381 1.236-3.221-.124-.3-1.31-3.04.094-3.179 0 0 1.009-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23 1.404.14 0.124 2.879.094 3.179.771.84 1.236 1.911 1.236 3.221 0 4.61-2.805 5.624-5.474 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.195.694.8 1.571 4.881-1.59 8.358-6.08 8.358-11.387 0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+              GitHub Repo
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-800 font-semibold flex items-center"
+            >
+              <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+              Live Demo (Optional)
+            </a>
+          </div>
+        </div>
+
+        <!-- Add more Project Cards as needed -->
+        <!-- Project Card 3 -->
+        <div
+          class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200"
+        >
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">
+            EV Data Analysis
+          </h3>
+          <p class="text-gray-700 mb-4">
+            This project is a <strong>Tableau</strong> dashboard for
+            <strong>Electric Vehicle Data Analysis</strong>, providing key
+            insights into the EV market's trends, vehicle types, and
+            manufacturer performance.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="bg-teal-200 text-teal-800 text-sm font-medium px-2.5 py-0.5 rounded-full"
+              >Tableau</span
+            >
+          </div>
+          <div class="flex justify-between items-center">
+            <a
+              href="https://github.com/PISETH-CHEA/EV-Data-Analysis"
+              target="_blank"
+              class="text-blue-600 hover:text-blue-800 font-semibold flex items-center"
+            >
+              <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.542-1.355-1.326-1.714-1.326-1.714-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.464-2.381 1.236-3.221-.124-.3-1.31-3.04.094-3.179 0 0 1.009-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23 1.404.14 0.124 2.879.094 3.179.771.84 1.236 1.911 1.236 3.221 0 4.61-2.805 5.624-5.474 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.195.694.8 1.571 4.881-1.59 8.358-6.08 8.358-11.387 0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+              GitHub Repo
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-800 font-semibold flex items-center"
+            >
+              <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+              Live Demo (Optional)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md"
+    >
+      <h2 class="text-4xl font-extrabold text-center mb-8 text-gray-800">
+        My Skills
+      </h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <!-- Specific Skill Badges for Piseth Chea -->
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >Data Science</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >Storytelling (Data)</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >Python</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >SQL</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >JavaScript</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >Tableau</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >Power BI</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >Looker</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >Entrepreneurship</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >Communication</span
+        >
+        <span
+          class="bg-gray-200 text-gray-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >Research</span
+        >
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md"
+    >
+      <h2 class="text-4xl font-extrabold text-center mb-8 text-gray-800">
+        Get in Touch
+      </h2>
+      <div class="text-center text-lg text-gray-700 max-w-2xl mx-auto">
+        <p class="mb-6">
+          I'm always open to new opportunities, collaborations, and interesting
+          discussions. Feel free to reach out!
+        </p>
+        <div class="flex flex-col items-center space-y-4">
+          <a
+            href="mailto:pisethchea2005@gmail.com"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 flex items-center"
+          >
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            info@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/piseth-chea-5126562a8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGyOF6n7hSjegPko4Ge2JDg%3D%3D"
+            target="_blank"
+            class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 flex items-center"
+          >
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+            LinkedIn Profile
+          </a>
+          <a
+            href="https://github.com/PISETH-CHEA"
+            target="_blank"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 flex items-center"
+          >
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.542-1.355-1.326-1.714-1.326-1.714-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.464-2.381 1.236-3.221-.124-.3-1.31-3.04.094-3.179 0 0 1.009-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23 1.404.14 0.124 2.879.094 3.179.771.84 1.236 1.911 1.236 3.221 0 4.61-2.805 5.624-5.474 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.195.694.8 1.571 4.881-1.59 8.358-6.08 8.358-11.387 0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+            GitHub Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-6 text-center rounded-t-lg mt-8">
+      <p>&copy; 2025 Piseth Chea. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
